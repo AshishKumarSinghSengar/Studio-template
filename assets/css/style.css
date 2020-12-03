@@ -1,0 +1,148 @@
+.foot{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+}
+.foot{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foot .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.foot .container{
+    margin-right: 30px;
+}
+.foot .container .sec.aboutus{
+    width: 40%;
+}
+.foot .container h2{
+    font-weight:500 ;
+    position: relative;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.foot .container h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.foot .container .sec.aboutus p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.sci li a:hover{
+    background: #f00;
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quicklink{
+    width: 25%;
+    position: relative;
+}
+.quicklink ul li a{
+    list-style: none;
+}
+.quicklink ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quicklink ul li a:hover{
+    color: #fff;
+    font-size: 30px;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li span a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li span a:hover{
+    color: #fff;
+}
+.copyright{
+    width: 100%;
+    background: #101010;
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+@media(max-width: 991px)
+{
+    .foot{
+        padding: 40px;
+    }
+    .foot .container{
+        flex-direction: column;
+    }
+    .foot .container .sec{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .foot .container .sec.aboutus,.quicklink{
+        width: 100%;
+    }   
+    .contact{
+        width: 100%;
+    }
+    .copyright{
+        padding: 8px 40px;
+    }
+}
