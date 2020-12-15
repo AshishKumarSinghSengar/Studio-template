@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>HOME | RESPONSIVE-WEBSITE-3</title>
+        <link rel="stylesheet" href="./RESPONSIVE-3.css">
+    </head>
+    <body>
+        <section>
+            <header>
+                <a href="#" class="logo">world</a>
+                <div class="toggle"></div>
+            </header>
+            <img src="./bg.jpg" class="bg">
+            <img src="./bird.png" class="bird">
+            <div class="content">
+                <h2>We can save The<br><span>Earth</span></h2><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates qui quos,
+                   sapiente a obcaecati similique suscipit minima repudiandae praesentium deserunt unde
+                    illo architecto quasi, magnam eligendi quisquam temporibus blanditiis!</p>
+                <a href="#">JOIN US</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="./facebook.png"></a></li>
+                <li><a href="#"><img src="./twitter.png"></a></li>
+                <li><a href="#"><img src="./instagram.png"></a></li>
+            </ul>
+            <div class="textBlocks">
+                <div class="block">
+                    <h3>Defenders of earth</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores, nostrum
+                        vero, dignissimos voluptate placeat aperiam tempora nulla doloremque pariatur 
+                        saepe. Dolor mollitia, laboriosam quibusdam dolorum maiores eveniet quaerat qui.</p>
+                </div>
+                <div class="block">
+                    <h3>How to save Water</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores, nostrum
+                        vero, dignissimos voluptate placeat aperiam tempora nulla doloremque pariatur 
+                        saepe. Dolor mollitia, laboriosam quibusdam dolorum maiores eveniet quaerat qui.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener("mousemove",function(e)
+            {
+                const bg =document.querySelector('.bg');
+                const bird =document.querySelector('.bird');
+                const content =document.querySelector('.content');
+
+                bg.style.width=100 + e.pageX/100+'%';
+                bg.style.height=100 + e.pageX/100+'%';
+
+                bird.style.right=100 + e.pageX/2 + 'px';
+                content.style.left=100 + e.pageX/2.5 + 'px'; 
+            })
+        </script>
+    </body>
+</html>
